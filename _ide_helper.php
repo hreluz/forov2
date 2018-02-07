@@ -6957,7 +6957,7 @@ namespace Illuminate\Support\Facades {
         }
         
         /**
-         * Sets a callable able to create a Request instance.
+         * Sets a callable able to create.blade.php a Request instance.
          * 
          * This is mainly useful when you need to override the Request class
          * to keep BC with an existing system. It should not be used for any
@@ -12897,7 +12897,7 @@ namespace  {
             }
          
             /**
-             * Get the first record matching the attributes or create it.
+             * Get the first record matching the attributes or create.blade.php it.
              *
              * @param array $attributes
              * @param array $values
