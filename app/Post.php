@@ -9,6 +9,10 @@ class Post extends Model
 {
     protected $fillable = ['content', 'title'];
 
+    protected $casts = [
+        'pending' => 'boolean'
+    ];
+
     public function user()
     {
         return $this->belongsTo(User::class);
@@ -16,7 +20,7 @@ class Post extends Model
 
     public function comments()
     {
-        return $this->hasMany(User::class);
+        return $this->hasMany(Comment::class);
     }
 
     public function setTitleAttribute($value)
